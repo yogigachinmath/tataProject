@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="./style.css" rel="stylesheet" type='text/css' />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <script lang="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.1/xlsx.full.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <table class="table">
+            <thead>
+                <tr class="columns">
+                    <th scope="col">Urls</th>
+                </tr>
+            </thead>
+            <tbody class="rows">
+            </tbody>
+        </table>
+        <hr>
+        <div class="control d-flex m-5">
+            <button type="submit" class="submit btn btn-primary mr-3">Submit</button>
+            <button class="reset btn btn-primary ">Reset</button>
+        </div>
+        <form onsubmit="return submitNewUrl()">
+            <div class="ml-5 mr-5 mb-2 form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">Url</label>
+                    <input type="text" class="form-control newUrl" id="inputCity" placeholder="Enter the Url" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">Type</label>
+                    <select id="inputState" class="selectPage form-control">
+                        <option selected>Url</option>
+                        <option>Setting</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2 ml-5">Submit</button>
+        </form>
+        <script src='control.js'></script>
+    </div>
+</body>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="./style.css" rel="stylesheet" type = 'text/css'/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script lang="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.1/xlsx.full.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="dashboard disable">
+        <nav class="navbar navbar-light bg-info">
+            <div class="leftContent">
+                <a class="navbar-brand d-flex" href="#">
+                    <h2>Tata</h2>
+                </a>
+            </div>
+            <div class="rightContent d-flex m-2">
+                <p>username</p>
+                <button class="btn btn-primary ml-3 logout">logout</button>
+            </div>
+        </nav>
+        <main class="mainContainer ml-5 mr-5 control">
+            <div class="" id="wrapper">
+                <div class="uploadFile d-flex">
+                    <div class="">
+                        <h4 style="color: #144D7F;"></h4>
+                        <p>Upload the file.</p>
+                    </div>
+                    <div class="template d-flex m-3">
+                        <div class="mr-3">
+                            <a href="./template.xlsx" download>Download a Template<br />
+                                from here</a>
+                        </div>
+                        <div>
+                            <label for="upload-file" class="btn btn-info">
+                                Choose file...
+                            </label>
+                            <input id="upload-file" type="file" style="display: none" class="input-excel" />
+                        </div>
+                    </div>
+                </div>
+                <div class="mainContent">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="columns"></tr>
+                        </thead>
+                        <tbody class="rows"></tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <div class="alert alert-danger errors" role="alert">
+            <h1>ERRORS</h1>
+        </div>
+    </div>
+    <div class="upload mr-5 disable">
+        <button class="btn btn-primary">Upload</button>
+    </div>
+    <script src="admin.js"></script>
+</body>
+
+</html>
